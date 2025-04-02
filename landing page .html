@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }   
+
+        .header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .header h1{
+            font-size: 50px;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background: #333;
+        }
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            background: #ddd;
+            color: black;
+        }
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        .fakeimg{
+            background: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+            
+        }
+        @media screen and (max-width: 600px){
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>my website</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#" style="float: right;">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>some text..</p>
+                <p>Lorem ipsum dolor sit amet consec
+                    tetur adipisicing elit. Tempora consequa
+                    tur iusto, quisquam aperiam debitis nemo eum.
+                     Mollitia magni cum placeat quisquam, et officii
+                     s aspernatur quasi, laborum, corporis doloremque ipsam magnam?
+                </p>
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>some text..</p>
+                <p>Lorem ipsum dolor sit amet consec
+                    tetur adipisicing elit. Tempora consequa
+                    tur iusto, quisquam aperiam debitis nemo eum.
+                     Mollitia magni cum placeat quisquam, et officii
+                     s aspernatur quasi, laborum, corporis doloremque ipsam magnam?
+                </p>
+            </div>
+            <div class="card">
+                <h3>popular post</h3>
+                <div class="fakeimg"><p>image</p></div>
+                <div class="fakeimg"><p>image</p></div>
+                <div class="fakeimg"><p>image</p></div>
+            </div>
+            <div class="card">
+                <h3>follow me</h3>
+                <p>some text..</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>footer</h2>
+    </div>
+</body>
+</html>

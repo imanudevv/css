@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            position: relative;
+        }
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+
+        }
+        .bottom left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+
+        }
+        .bottomright {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<body>
+    <h2>Text on top of image</h2>
+
+    <p>Add some text to an image in the top left corner, top right ,bottom left & bottom right:</p>
+
+    <div class="container">
+        <img src="1.jpg" alt="1.jpg" width="1000" height="300">
+
+        <div class="top left">top left</div>
+        <div class="top right">top right</div>
+        <div class="bottom left">bottom left</div>
+        <div class="bottom right">bottom right</div>
+        <div class="center">centered</div>
+    </div>
+    
+</body>
+</html>
